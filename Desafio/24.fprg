@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 09:08:34 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA2OyIwODo0NzoxOCAiOzI4MTk="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA2OyIwOTowODozNCAiOzE7MjkyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, numi, soma, mult" type="Integer" array="False" size=""/>
+            <declare name="a, b, c, d, e, f" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreva um n&#250;mero de 3 digitos&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="a" expression="num/100"/>
+            <assign variable="b" expression="num%100/10"/>
+            <assign variable="c" expression="num%100%10"/>
+            <assign variable="d" expression="c"/>
+            <assign variable="e" expression="b"/>
+            <assign variable="f" expression="a"/>
+            <assign variable="numi" expression="d*100+e*10+f"/>
+            <output expression="&quot;Seu n&#250;mero invertido &#233; &quot; &amp;numi" newline="True"/>
+            <assign variable="soma" expression="num+numi"/>
+            <output expression="&quot;A soma do seu numero com o inverso dele &#233; &quot; &amp;soma" newline="True"/>
+            <assign variable="mult" expression="f*1+e*2+d*3"/>
+            <output expression="&quot;A multiplica&#231;&#227;o do seu n&#250;mero invertido com a posi&#231;&#227;o deles &#233; &quot; &amp;mult" newline="True"/>
+            <assign variable="num" expression="num%10"/>
+            <output expression="&quot;O ultimo d&#237;gito do seu n&#250;mero &#233; &quot; &amp;num" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

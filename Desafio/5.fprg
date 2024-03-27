@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 10:12:37 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwOTo0OToyMiAiOzI4MTU="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIxMDoxMjozNyAiOzE7MjkxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Vkw, precoKW, Desc" type="Real" array="False" size=""/>
+            <input variable="Vkw"/>
+            <assign variable="precoKW" expression="Vkw*2"/>
+            <output expression="&quot;Para cada Kw/h o pre&#231;o sobe um valor estimado de 2 reais. O valor a ser pago &#233;: R$&quot; &amp; precoKW" newline="True"/>
+            <assign variable="Desc" expression="precoKW-(precoKW/10)"/>
+            <output expression="&quot;Mas com um desconto de 10% o valor ser&#225; de: R$&quot; &amp; Desc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

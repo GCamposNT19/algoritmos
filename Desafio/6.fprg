@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:02:20 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIxMDozNzo0MyAiOzI4MDc="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIxMTowMjoyMCAiOzE7MjkwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="nome, todos" type="String" array="False" size=""/>
+            <declare name="pmc, uc, qc, tmp, dulti" type="String" array="False" size=""/>
+            <input variable="nome"/>
+            <output expression="nome" newline="True"/>
+            <output expression="char(nome,0)" newline="True"/>
+            <output expression="char(nome,len(nome)-1)" newline="True"/>
+            <output expression="char(nome,0)&amp;char(nome,1)&amp;char(nome,2)" newline="True"/>
+            <output expression="char(nome,4)" newline="True"/>
+            <output expression="char(nome,0)" newline="True"/>
+            <assign variable="todos" expression="&quot;&quot;"/>
+            <for variable="i" start="1" end="len(nome)-1" direction="inc" step="1">
+                <assign variable="todos" expression="todos&amp;char(nome,i)"/>
+            </for>
+            <output expression="todos" newline="True"/>
+            <output expression="char(nome,len(nome)-2)&amp;char(nome,len(nome)-1)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rafael.trilha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:26:50 "/>
+        <attribute name="created" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDMtMDQ7IjA5OjExOjQ2ICI7Mjc2Mw=="/>
+        <attribute name="edited" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDMtMDQ7IjA5OjI2OjUwICI7MjsyODcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, c, d, u" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="c" expression="n/100"/>
+            <assign variable="d" expression="(n/10)%10"/>
+            <assign variable="u" expression="n%10"/>
+            <output expression="&quot;CDU: &quot;&amp;n&amp;&#13;&#10;&quot; | UDC: &quot;&amp;u&amp;d&amp;c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

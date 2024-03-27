@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:53:53 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwNDo0MzoxMiAiOzI4MDM="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwNDo1Mzo1MyAiOzE7MjkxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lad, diag" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vamos descobrir o n&#250;mero de diagonais de um poligono?&quot;" newline="True"/>
+            <output expression="&quot;Quantos lados voc&#234; deseja para seu poligono?&quot;" newline="True"/>
+            <input variable="lad"/>
+            <assign variable="diag" expression="lad*(lad-3)/2"/>
+            <output expression="&quot;Esse pol&#237;gono tem &quot;&amp;diag&amp;&quot; diagonais.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

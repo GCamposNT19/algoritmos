@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 03:56:02 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7REVTS1RPUC02QThEVTU0OzIwMjQtMDEtMjk7IjAyOjUzOjEyICI7MzU1NQ=="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7REVTS1RPUC02QThEVTU0OzIwMjQtMDEtMjk7IjAzOjU2OjAyICI7MjszNjY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Peso, Altura, IMC" type="Real" array="False" size=""/>
+            <declare name="mensage, Bp, Pn, Sp, Obi, Obsiii" type="String" array="False" size=""/>
+            <assign variable="mensage" expression="&quot;Escreva seu Peso em Kg, e pogo ap&#243;s escreva sua altura em Metros&quot;"/>
+            <assign variable="Bp" expression="&quot;Abaixo do Peso&quot;"/>
+            <assign variable="Pn" expression="&quot;Peso Normal&quot;"/>
+            <assign variable="Sp" expression="&quot;Sobrepeso&quot;"/>
+            <assign variable="Obi" expression="&quot;Obesidade I&quot;"/>
+            <assign variable="Obsiii" expression="&quot;Obesidade II e III&quot;"/>
+            <output expression="mensage" newline="True"/>
+            <input variable="Peso"/>
+            <input variable="Altura"/>
+            <assign variable="IMC" expression="Peso / (Altura^2)"/>
+            <if expression="IMC &lt;= 18.5">
+                <then>
+                    <output expression="Bp" newline="True"/>
+                </then>
+                <else>
+                    <if expression="IMC &lt;= 24.9">
+                        <then>
+                            <output expression="Pn" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="IMC &lt;= 29.9">
+                                <then>
+                                    <output expression="Sp" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="IMC &lt;= 39.9">
+                                        <then>
+                                            <output expression="Obi" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="IMC &gt;= 40">
+                                                <then>
+                                                    <output expression="Obsiii" newline="True"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="IMC" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

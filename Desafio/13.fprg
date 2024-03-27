@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:28:37 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMjoyMDozNyAiOzI4MDM="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMjoyMDozOSAiOzE7R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMTo0ODowMiAiOzEyLmZwcmc7NjQxMQ=="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMjoyODozNyAiOzE7MjkxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pg, raz, a" type="Integer" array="False" size=""/>
+            <output expression="&quot;Coloque a raz&#227;o  para uma PA&quot;" newline="True"/>
+            <input variable="raz"/>
+            <assign variable="pg" expression="0"/>
+            <for variable="a" start="1" end="10" direction="inc" step="1">
+                <assign variable="pg" expression="pg+1"/>
+                <assign variable="raz" expression="raz*pg"/>
+                <if expression="a==5">
+                    <then>
+                        <output expression="&quot;O termo n&#250;mero &quot; &amp;a&amp; &quot;, &#233; &quot;&amp;raz" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 02:51:53 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7REVTS1RPUC02QThEVTU0OzIwMjQtMDEtMzE7IjAyOjI3OjQ5ICI7MzU1OQ=="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7REVTS1RPUC02QThEVTU0OzIwMjQtMDEtMzE7IjAyOjUxOjUzICI7MTszNjU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <for variable="a" start="1" end="10" direction="inc" step="1">
+                <for variable="b" start="1" end="10" direction="inc" step="1">
+                    <assign variable="c" expression="Mult(a,b)"/>
+                    <output expression="&quot;A multiplica&#231;&#227;o entre &quot; &amp; a &amp; &quot; e &quot; &amp; b &amp; &quot; resulta em &quot; &amp; c" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+    <function name="Mult" type="Integer" variable="Mult">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Mult" type="Integer" array="False" size=""/>
+            <assign variable="Mult" expression="a*b"/>
+        </body>
+    </function>
+</flowgorithm>

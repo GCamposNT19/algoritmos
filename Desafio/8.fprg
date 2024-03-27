@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:29:23 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIxMToyMDowMSAiOzI3OTQ="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMToyOToyMyAiOzE7MjkxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="raio, area, peri" type="Real" array="False" size=""/>
+            <output expression="&quot;Escreva o raio de um c&#237;rculo do seu desejo para descrobrir suas medidas&quot;" newline="True"/>
+            <input variable="raio"/>
+            <assign variable="area" expression="3.14*raio^2"/>
+            <assign variable="peri" expression="2*3.14*raio"/>
+            <output expression="&quot;O seu o seu c&#237;rculo de raio &quot;&amp; raio &amp;&quot; tem a &#225;rea de &quot;&amp; area &amp;&quot; com um per&#237;metro de &quot;&amp; peri &amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

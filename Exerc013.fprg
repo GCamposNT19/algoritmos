@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 04:47:58 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7REVTS1RPUC02QThEVTU0OzIwMjQtMDEtMzE7IjAzOjAxOjA1ICI7MzU0NA=="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7REVTS1RPUC02QThEVTU0OzIwMjQtMDEtMzE7IjA0OjQ3OjU4ICI7MjszNjcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, delta, x1, x2" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="delta" expression="delta (a,b,c)"/>
+            <if expression="delta &gt;= 0">
+                <then>
+                    <call expression="raiz(a,b,delta)"/>
+                </then>
+                <else>
+                    <declare name="sage" type="String" array="False" size=""/>
+                    <assign variable="sage" expression="&quot;n&#227;o foi possivel concluir a conta, pois o delta &#233; menor que zero!&quot;"/>
+                    <output expression="sage" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="delta" type="Real" variable="delta">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="c" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="delta" type="Real" array="False" size=""/>
+            <assign variable="delta" expression="b^2-4*a*c"/>
+            <output expression="&quot; O seu delta &#233;...&quot; &amp; delta" newline="True"/>
+        </body>
+    </function>
+    <function name="raiz" type="None" variable="x1">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="delta" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x1, x2" type="Real" array="False" size=""/>
+            <assign variable="x1" expression="(-b+delta^(1/2))/(2*a)"/>
+            <assign variable="x2" expression="(-b-delta^(1/2))/(2*a)"/>
+            <output expression="&quot;A sua raiz 1 &#233;...&quot; &amp; x1" newline="True"/>
+            <output expression="&quot;A sua raiz 2 &#233;...&quot; &amp; x2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

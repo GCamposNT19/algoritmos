@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 10:11:30 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwNDoyNjo0NSAiOzI4MTA="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA2OyIxMDoxMTozMCAiOzI7MjkwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N1, N2, Dq, Qd" type="Real" array="False" size=""/>
+            <output expression="&quot;Vamos descobrir a difer&#234;n&#231;a de dois n&#250;meros reais de sua escolha!&quot;" newline="True"/>
+            <input variable="N1"/>
+            <input variable="N2"/>
+            <assign variable="Qd" expression="(N1-N2)*1/2"/>
+            <output expression="&quot;O quadrado da difer&#234;n&#231;a dos n&#250;meros &#233; &quot;&amp;Qd" newline="True"/>
+            <assign variable="Dq" expression="(N1*1/2)-(N2*1/2)"/>
+            <output expression="&quot;A difer&#234;n&#231;a do quadrado dos n&#250;meros &#233; &quot;&amp;Dq" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

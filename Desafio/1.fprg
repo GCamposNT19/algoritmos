@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rafael.trilha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 08:45:20 "/>
+        <attribute name="created" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDMtMDQ7IjA4OjMxOjM1ICI7Mjc2Mg=="/>
+        <attribute name="edited" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDMtMDQ7IjA4OjQ1OjIwICI7MjsyODcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="data, dia, mes, ano" type="Integer" array="False" size=""/>
+            <input variable="data"/>
+            <assign variable="ano" expression="data/10000"/>
+            <assign variable="mes" expression="(data/100)%100"/>
+            <assign variable="dia" expression="data%100"/>
+            <output expression="dia&amp;&quot;/&quot;&amp;mes&amp;&quot;/&quot;&amp;ano" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

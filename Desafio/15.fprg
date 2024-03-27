@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 03:03:02 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMjo1NTowMSAiOzI4MDI="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMzowMzowMiAiOzE7MjkwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="altura, raio, vol, base" type="Real" array="False" size=""/>
+            <output expression="&quot;Mostre-nos as medidas do raio e a altura para descobrimos o volume de uma lata&quot;" newline="True"/>
+            <input variable="raio"/>
+            <input variable="altura"/>
+            <assign variable="base" expression="3.14*raio^2"/>
+            <assign variable="vol" expression="base*altura"/>
+            <output expression="&quot;A sua lata tem um volume de &quot; &amp;vol" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

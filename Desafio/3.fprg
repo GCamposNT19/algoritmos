@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rafael.trilha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:11:23 "/>
+        <attribute name="created" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDMtMDQ7IjA4OjUwOjI0ICI7Mjc2MQ=="/>
+        <attribute name="edited" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDMtMDQ7IjA5OjExOjIzICI7MzsyODY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="s, c, t" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <assign variable="s" expression="sin(a)"/>
+            <assign variable="c" expression="cos(a)"/>
+            <assign variable="t" expression="tan(a)"/>
+            <output expression="&quot;Angulo: &quot;&amp;a&amp;&#13;&#10;&quot; | Seno: &quot;&amp;s&amp;&#13;&#10;&quot; | Coseno: &quot;&amp;c&amp;&#13;&#10;&quot; | Tangente: &quot;&amp;t" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

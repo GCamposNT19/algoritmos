@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:15:58 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwNDoxMToxNSAiOzI4MDE="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwNDoxNTo1OCAiOzE7MjkyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hora, min, tempat" type="Integer" array="False" size=""/>
+            <output expression="&quot;Descubra quantos minutos se passarm  desde a meia-noite&quot;" newline="True"/>
+            <output expression="&quot;Horas...&quot;" newline="True"/>
+            <input variable="hora"/>
+            <output expression="&quot;Minutos...&quot;" newline="True"/>
+            <input variable="min"/>
+            <assign variable="tempat" expression="(hora*60)+min"/>
+            <output expression="&quot;Se passaram &quot; &amp;tempat&amp; &quot;min desde a meia-noite&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

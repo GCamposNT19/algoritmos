@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 09:25:19 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA2OyIwOTowODozNyAiOzI4MTg="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA2OyIwOToyNDozOSAiOzI7R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA2OyIwODowMjowOSAiOzI1LmZwcmc7NjQzNQ=="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA2OyIwOToyNToxOSAiOzE7MjkyNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Descrubra se consegue fazer um tri&#226;ngulo com os lados:&quot;" newline="True"/>
+            <output expression="&quot;Medida 1:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Medida 2:&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Medida 3:&quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="a==b &amp;&amp; a==c &amp;&amp; b==c">
+                <then>
+                    <output expression="&quot;Suas medidas formam um tri&#226;ngulo equil&#225;tero!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Suas medidas n&#227;o formam um tri&#226;ngulo equil&#225;tero&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="c == b || a==b || a==c">
+                <then>
+                    <output expression="&quot;Suas medidas formam um tri&#226;ngulo isoceles!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Suas medidas n&#227;o formam um tri&#226;ngulo isoceles!&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="c!=b || a!=b || a!=c">
+                <then>
+                    <output expression="&quot;Suas medidas formam um tri&#226;ngulo escaleno!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Suas medidas n&#227;o formam um tri&#226;ngulo escaleno!&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="b-c &lt; a &amp;&amp; a &lt; b+c">
+                <then>
+                    <if expression="a-c &lt; b &amp;&amp; b &lt; a+c">
+                        <then>
+                            <if expression="a-b &lt; c &amp;&amp; c &lt; a+b">
+                                <then>
+                                    <output expression="&quot;&#201; possivel fazer um tri&#226;ngulo com estas medidas!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;N&#227;o &#233; possivel fazer um tri&#226;ngulo com esta medida&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;N&#227;o &#233; possivel fazer um tri&#226;ngulo com esta medida&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;N&#227;o &#233; possivel fazer um tri&#226;ngulo com esta medida&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 08:02:04 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA2OyIwNzozODoxNCAiOzI4MTQ="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA2OyIwODowMjowNCAiOzE7MjkxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, P, pa" type="Real" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Veja seu valor acumulado&quot;" newline="True"/>
+            <output expression="&quot;Valor da aplica&#231;&#227;o:(R$)&quot;" newline="True"/>
+            <input variable="P"/>
+            <output expression="&quot;Tempo de aplica&#231;&#227;o: (meses)&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;taxa de juros:&quot;" newline="True"/>
+            <input variable="i"/>
+            <assign variable="pa" expression="P*((1+i)^n - 1)/i"/>
+            <output expression="&quot;Seu valor acumulado &#233;: R$&quot; &amp;pa" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

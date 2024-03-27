@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:11:01 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMzo0OTo0MyAiOzI4MTI="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwNDoxMTowMSAiOzE7MjkwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num1, Den1, Num2, Den2" type="Integer" array="False" size=""/>
+            <declare name="somaNum, somaDen, multNum, multDen" type="Real" array="False" size=""/>
+            <output expression="&quot;Escreva do numerador de denominador de 2 fra&#231;&#245;es&quot;" newline="True"/>
+            <output expression="&quot;Fra&#231;&#227;o 1&quot;" newline="True"/>
+            <input variable="Num1"/>
+            <input variable="Den1"/>
+            <output expression="&quot;Fra&#231;&#227;o 2&quot;" newline="True"/>
+            <input variable="Num2"/>
+            <input variable="Den2"/>
+            <if expression="Den1==Den2">
+                <then>
+                    <assign variable="somaDen" expression="Den1"/>
+                </then>
+                <else>
+                    <assign variable="somaDen" expression="Den1*Den2"/>
+                </else>
+            </if>
+            <assign variable="somaNum" expression="(Num1*Den2)+(Num2*Den1)"/>
+            <output expression="Num1 &amp; &quot;/&quot; &amp; Den2 &amp; &quot; + &quot; &amp; Num2 &amp; &quot;/&quot; &amp;Den2&amp; &quot; = &quot; &amp; somaNum &amp; &quot;/&quot; &amp; somaDen" newline="True"/>
+            <assign variable="multNum" expression="Num1*Num2"/>
+            <assign variable="multDen" expression="Den1*Den2"/>
+            <output expression="Num1 &amp; &quot;/&quot; &amp; Den2 &amp; &quot; X &quot; &amp; Num2 &amp; &quot;/&quot; &amp;Den2&amp; &quot; = &quot; &amp; multNum &amp; &quot;/&quot; &amp; multDen" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 03:49:38 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMzowMzowNCAiOzI3OTk="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMzo0OTozOCAiOzE7MjkyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, troc" type="Integer" array="False" size=""/>
+            <output expression="&quot;Atribua um valor para variavel A e a variavel B&quot;" newline="True"/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <assign variable="troc" expression="A"/>
+            <output expression="&quot;A = &quot;&amp;A" newline="True"/>
+            <output expression="&quot;B = &quot;&amp;B" newline="True"/>
+            <output expression="&quot;...Trocando Valores...&quot;" newline="True"/>
+            <assign variable="A" expression="B"/>
+            <assign variable="B" expression="troc"/>
+            <output expression="&quot;A = &quot;&amp;A" newline="True"/>
+            <output expression="&quot;B = &quot;&amp;B" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

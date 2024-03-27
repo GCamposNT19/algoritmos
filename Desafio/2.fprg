@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rafael.trilha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 08:50:22 "/>
+        <attribute name="created" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDMtMDQ7IjA4OjMxOjM1ICI7Mjc2Mg=="/>
+        <attribute name="edited" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDMtMDQ7IjA4OjUwOjIyICI7NTsyODcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, n, d" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="a" expression="n-1"/>
+            <assign variable="d" expression="n+1"/>
+            <output expression="&quot;N&#176;&quot;&amp;n&amp;&quot; | Anterior:&quot;&amp;a&amp;&quot; | Proximo:&quot;&amp;d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

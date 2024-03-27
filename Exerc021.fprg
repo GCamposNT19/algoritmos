@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:49:14 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwOToyODowOSAiOzI4MTc="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwOTo0OToxNCAiOzE7MjkyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <input variable="num"/>
+            <output expression="&quot;Seu n&#250;mero &#233;: &quot;&amp; num" newline="True"/>
+            <assign variable="num" expression="num-1"/>
+            <output expression="&quot;O n&#250;mero Antecessor &#233;: &quot;&amp; num" newline="True"/>
+            <assign variable="num" expression="num+2"/>
+            <output expression="&quot;O n&#250;mero Sucessor &#233;: &quot;&amp; num" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

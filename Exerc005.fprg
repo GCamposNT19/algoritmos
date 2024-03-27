@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 01:44:46 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7REVTS1RPUC02QThEVTU0OzIwMjQtMDEtMjk7IjAxOjM3OjM2ICI7MzU2Mg=="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7REVTS1RPUC02QThEVTU0OzIwMjQtMDEtMjk7IjAxOjQ0OjQ2ICI7MTszNjY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x1, x2, a, b, c, delta" type="Real" array="False" size=""/>
+            <declare name="mensage" type="String" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="delta" expression="b^2-4*a*c"/>
+            <output expression="delta" newline="True"/>
+            <if expression="delta&gt;=0">
+                <then>
+                    <assign variable="x1" expression="(-b+delta^(1/2))/(2*a)"/>
+                    <assign variable="x2" expression="(-b-delta^(1/2))/(2*a)"/>
+                    <output expression="x1" newline="True"/>
+                    <output expression="x2" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="mensage" expression="&quot;impossivel de Calcular&quot;"/>
+                    <output expression="mensage" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

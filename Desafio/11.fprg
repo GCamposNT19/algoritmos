@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:47:42 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMTo0NDowNiAiOzI4MDQ="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMTo0Nzo0MiAiOzE7MjkxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Co, Ca, hip" type="Real" array="False" size=""/>
+            <output expression="&quot;Escreva os catetos de um tri&#226;ngulo para descobrir a sua Hipotenusa&quot;" newline="True"/>
+            <input variable="Ca"/>
+            <input variable="Co"/>
+            <assign variable="hip" expression="(Ca^2*Co^2)/2"/>
+            <output expression="&quot;A hipotenusa deste tri&#226;ngulo &#233; &quot; &amp;hip" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

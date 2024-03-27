@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:36:47 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMToyOToyNyAiOzI4MTA="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMTozNjo0NyAiOzE7MjkxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base, altura, prof, diag" type="Real" array="False" size=""/>
+            <output expression="&quot;Espresse as medidas da base, altura e profundidade de um paralelepipedo&quot;" newline="True"/>
+            <input variable="base"/>
+            <input variable="altura"/>
+            <input variable="prof"/>
+            <assign variable="diag" expression="(base^2+altura^2+prof^2)*1/2"/>
+            <output expression="&quot;A diagonal desse paralelep&#237;pedo &#233; &quot;&amp; diag" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

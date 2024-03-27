@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:54:11 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMjoyODo0MSAiOzI4MDY="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMjo1NDoxMSAiOzE7MjkxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fah, cen, Rfah, Rcen, opc" type="Integer" array="False" size=""/>
+            <assign variable="cen" expression="0"/>
+            <assign variable="fah" expression="0"/>
+            <assign variable="opc" expression="0"/>
+            <output expression="&quot;======CALCULO DE TEMPERATURAS======&quot;" newline="True"/>
+            <output expression="&quot;1. Fahrenheit (F)&quot;" newline="True"/>
+            <output expression="&quot;2. Centr&#237;gados (C)&quot;" newline="True"/>
+            <input variable="opc"/>
+            <if expression="opc==1">
+                <then>
+                    <input variable="cen"/>
+                    <assign variable="Rfah" expression="(9/5*cen)+32"/>
+                    <output expression="Rfah" newline="True"/>
+                </then>
+                <else>
+                    <if expression="opc==2">
+                        <then>
+                            <input variable="fah"/>
+                            <assign variable="Rcen" expression="(5/9)*(fah-32)"/>
+                            <output expression="Rcen" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

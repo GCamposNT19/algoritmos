@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:19:52 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIxMDoxMjo0NCAiOzI4MDE="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIxMToxOTo1MiAiOzI7MjkxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="peri, area, diag" type="Integer" array="False" size=""/>
+            <declare name="base, altura" type="Integer" array="False" size=""/>
+            <output expression="&quot;Entre com as medidas da base e altura de um ret&#226;ngulo&quot;" newline="True"/>
+            <input variable="base"/>
+            <input variable="altura"/>
+            <assign variable="peri" expression="(base*2)+(altura*2)"/>
+            <assign variable="area" expression="base*altura"/>
+            <assign variable="diag" expression="(base*2+altura*2)^1/2"/>
+            <output expression="peri" newline="True"/>
+            <output expression="area" newline="True"/>
+            <output expression="diag" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

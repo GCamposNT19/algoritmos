@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 03:49:30 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAyLTA1OyIwMTo0NjozNiAiOzI4MDk="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAyLTA1OyIwMzo0OTozMCAiOzI7MjkxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="not1, not2, not3, pres, media" type="Real" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="falt" type="Integer" array="False" size=""/>
+            <output expression="&quot; Escreva o nome do aluno &quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot; Escreva as tr&#234;s notas do &quot; &amp; nome" newline="True"/>
+            <input variable="not1"/>
+            <input variable="not2"/>
+            <input variable="not3"/>
+            <output expression="&quot; Escreva o total de faltas do &quot; &amp; nome" newline="True"/>
+            <input variable="falt"/>
+            <assign variable="media" expression="media(not1, not2, not3)"/>
+            <assign variable="pres" expression="presen&#231;a(falt)"/>
+        </body>
+    </function>
+    <function name="media" type="Real" variable="media">
+        <parameters>
+            <parameter name="not1" type="Real" array="False"/>
+            <parameter name="not2" type="Real" array="False"/>
+            <parameter name="not3" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="media" type="Real" array="False" size=""/>
+            <assign variable="media" expression="(not1*2 + not2*3 + not3*5)/10"/>
+            <output expression="&quot; Sua nota final &#233;: &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+    <function name="presen&#231;a" type="Real" variable="presenca">
+        <parameters>
+            <parameter name="falt" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="presenca" type="Real" array="False" size=""/>
+            <assign variable="presenca" expression="falt/100"/>
+            <if expression="presenca &lt;= 0.25">
+                <then>
+                    <output expression="&quot; Sua presen&#231;a &quot; &amp; presenca &amp; &quot; est&#225; abaixo da m&#233;dia&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; Sua presen&#231;a &quot; &amp; presenca &amp; &quot; est&#225; acima da m&#233;dia&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

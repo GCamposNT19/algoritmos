@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Campos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:44:04 "/>
+        <attribute name="created" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMTozNzo0OSAiOzI4MTM="/>
+        <attribute name="edited" value="R2FicmllbC5DYW1wb3M7TlQxOTsyMDI0LTAzLTA0OyIwMTo0NDowNCAiOzE7MjkxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base, altura, area" type="Integer" array="False" size=""/>
+            <output expression="&quot;Espresse a base e a altura de um triangulo em que voc&#234; deseje a &#225;rea&quot;" newline="True"/>
+            <input variable="base"/>
+            <input variable="altura"/>
+            <assign variable="area" expression="(base*altura)/2"/>
+            <output expression="&quot;A &#225;rea do seu tr&#226;ngulo &#233; &quot;&amp;area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
